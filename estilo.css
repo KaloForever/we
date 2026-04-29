@@ -1,0 +1,30 @@
+body {
+    background-color: #dadada;
+    font-family: Arial, sans-serif;
+    
+    /* Agregamos esto para centrar todo */
+    display: flex;
+    flex-direction: column;  /* Uno debajo del otro */
+    justify-content: center; /* Centro vertical */
+    align-items: center;     /* Centro horizontal */
+    height: 100vh;           /* Usa el 100% de la altura de la ventana */
+    margin: 0;               /* Quita márgenes por defecto */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 10px 0;          /* Espacio pequeño entre h1 y p */
+}
+
+p {
+    color: black;            /* Simplifiqué el color aquí */
+    text-align: center;
+    text-decoration: underline;
+}
+
+p:hover {
+    color: blue;
+    cursor: pointer;
+    transition: 0.3s;
+}
