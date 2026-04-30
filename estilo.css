@@ -1,24 +1,22 @@
 body {
     background-color: #dadada;
     font-family: Arial, sans-serif;
-    
-    /* Agregamos esto para centrar todo */
     display: flex;
-    flex-direction: column;  /* Uno debajo del otro */
-    justify-content: center; /* Centro vertical */
-    align-items: center;     /* Centro horizontal */
-    height: 100vh;           /* Usa el 100% de la altura de la ventana */
-    margin: 0;               /* Quita márgenes por defecto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 h1 {
     color: #333;
     text-align: center;
-    margin: 10px 0;          /* Espacio pequeño entre h1 y p */
+    margin: 10px 0;
 }
 
 p {
-    color: black;            /* Simplifiqué el color aquí */
+    color: black;
     text-align: center;
     text-decoration: underline;
 }
@@ -27,4 +25,14 @@ p:hover {
     color: blue;
     cursor: pointer;
     transition: 0.3s;
+}
+
+/* --- ARREGLO PARA EL VIDEO --- */
+.video-troll {
+    width: 90%;          /* Ocupa casi todo el ancho en el celular */
+    max-width: 560px;    /* Pero no crece más de su tamaño original en PC */
+    aspect-ratio: 16 / 9; /* Mantiene la forma siempre */
+    height: auto;
+    border-radius: 8px;  /* Opcional: le da un toque más moderno */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombrita para que resalte */
 }
